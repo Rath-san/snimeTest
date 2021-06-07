@@ -1,0 +1,80 @@
+.cube__object {
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem; */
+}
+
+.cube__mesh {
+  width: 150px;
+  height: 150px;
+  /* background-color: pink; */
+  transform-style: preserve-3d;
+  transform: translateZ(100px) scaleZ(0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div[class^="face"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.face-z-t {
+  background-color: #eee;
+  transform: translateZ(75px);
+}
+/* 
+.face-z-b {
+  background-color: darkred;
+  transform: translateZ(-75px);
+} */
+
+.face-x-l {
+  background-color: #ddd;
+  transform: translate(-50%) rotateY(90deg);
+}
+
+.face-y-b {
+  background-color: #bbb;
+  transform: translateY(50%) rotateX(90deg);
+}
+
+.cube__shadow {
+  --shadow: #aaa;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(170, 170, 170, 0.9);
+  box-shadow: 0px 0px 10px var(--shadow);
+}
+
+.img3d::before,
+.img3d::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+
+#app {
+  perspective: 1000px;
+  /* perspective-origin: 20% 90%; */
+  padding: 10rem;
+}
+
+.images__scene {
+  display: flex;
+  align-items: center;
+  /* width: 250px; */
+  /* height: 250px; */
+  transform-style: preserve-3d;
+  /* transition: transform 1.5s; */
+  transform: rotate3d(1, 1, -1, 45deg);
+  /* background-color: red; */
+}

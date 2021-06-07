@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div class="images__scene" data-depth="300">
+      <div class="cube__object">
+        <div
+          class="cube__mesh"
+          data-transform="translateZ(250px) scaleZ(0.05)"
+        >
+          <div class="face-z-t"></div>
+          <!-- <div class="face-z-b"></div> -->
+          <div class="face-x-l"></div>
+          <div class="face-y-b"></div>
+          <!-- <img class="img" src="https://via.placeholder.com/100x100" /> -->
+        </div>
+        <div class="cube__shadow"></div>
+      </div>
+      <!-- <div class="cube__object cube__object--2">
+        <div class="cube__mesh">
+          <div class="face-z-t"></div>
+          <div class="face-z-b"></div>
+          <div class="face-x-l"></div>
+          <div class="face-y-b"></div>
+          <img class="img" src="https://via.placeholder.com/100x100" />
+        </div>
+        <div class="cube__shadow"></div>
+      </div> -->
+    </div>
+  </div>
+  <script src="/index.js"></script>
+</body>
+</html>

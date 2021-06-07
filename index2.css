@@ -1,0 +1,26 @@
+#app {
+  border: 1px solid red;
+  padding: 2rem;
+  width: 50%;
+  height: 500px;
+  margin: auto;
+}
+
+.tile {
+  position: relative;
+  width: 50%;
+}
+
+.tile__mesh {
+  position: inherit;
+  z-index: 1;
+  max-width: 100%;
+  /* transform: translateY(-50px); */
+}
+
+.tile__shadow {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  max-width: 120%;
+}
